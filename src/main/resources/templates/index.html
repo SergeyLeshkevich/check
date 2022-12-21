@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<p style="padding-left: 110px">CASH RECEIPT</p>
+<p style="padding-left: 85px">Supermarket 'Dva gusya'</p>
+<span style="padding-left: 77px">Address -</span> <span style="padding-left: 20px" th:text="${check.address}"/>
+<p style="padding-left: 48px">Telefone number: +375232235565</p>
+
+<span style="padding-left: 40px"> Cashier: </span><span th:text="${check.cashier}"/> <span style="padding-left: 40px">DATE:</span> <span th:text="${check.getStringDate()}"/><br>
+<span style="padding-left: 182px">TIME:</span> <span th:text="${check.getStringTime()}"/>
+<p>________________________________________________</p>
+<div>
+    <table>
+        <tr>
+            <td>QTY</td>
+            <td>DISCRIPTION</td>
+            <td style="padding-left: 40px; padding-right: 40px">Price</td>
+            <td>Total</td>
+        </tr>
+        <tr th:each="el : ${check.purchases}">
+            <td th:text="${el.amount}"/>
+            <td th:text="${el.product.title}" />
+            <td th:text="${el.product.price}" style="padding-left: 40px; padding-right: 40px"/>
+            <td th:text="${el.getTotalMoney()}"/>
+
+<!--            <tr th:if="${el.product.getIsPromotional()} eq 1">-->
+<!--                <td></td>-->
+<!--                <td>disc. prod</td>-->
+<!--                <td></td>-->
+<!--                <td th:text="${el.getDiscountMoney()}"/>-->
+<!--            </tr>-->
+        </tr>
+    </table>
+</div>
+<p>________________________________________________</p>
+<p>________________________________________________</p>
+<p>
+    <span style="margin-right: 150px">TAXABLE TOT. </span>
+    <span th:text="${check.getTotalMoney()}"/>
+</p>
+<p>
+    <span style="margin-right: 230px">DISC. </span>
+    <span th:text="${check.getDiscountWithDiscountCard()}"/>
+</p>
+<p>
+    <span style="margin-right: 212px">TOTAL </span>
+    <span th:text="${check.getTotal()}"/>
+</p>
+
+</body>
+</html>

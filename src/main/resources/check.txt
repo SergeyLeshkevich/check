@@ -1,0 +1,45 @@
+                  CASH RECEIPT
+              Supermarket 'Dva gusya'
+           Address - Kirova 16
+         Telefone number: +375232235565
+
+Cashier:Ivanov          DATE: 21.12.2022
+                                TIME: 10:58
+________________________________________________
+QTY    DISCRIPTION         Price      Total
+  1     Lorem ipsum        2,50        2,50
+    disc. prod                         0,00
+  1           dolor        3,00        3,00
+  3        sit amet        1,00        3,00
+  2   consectetuer         2,34        4,68
+  1            elit       10,50       10,50
+  7  Aenean commodo        3,12       21,84
+    disc. prod                         2,18
+  3     ligula eget        0,45        1,35
+  6             Cum       37,34      224,04
+  3  sociis natoque       17,43       52,29
+  4    penatibus et        1,50        6,00
+  1      magnis dis        0,99        0,99
+  8      parturient        4,23       33,84
+    disc. prod                         3,38
+  2          montes       32,45       64,90
+  1        nascetur       54,30       54,30
+  1       ridiculus        2,25        2,25
+  4      quam felis        3,50       14,00
+  3       ultricies       18,50       55,50
+ 10             nec        9,47       94,70
+    disc. prod                         9,47
+  1    pellentesque        0,65        0,65
+  5            quis        1,75        8,75
+  5 consequat massa       10,12       50,60
+  3      Donec pede        5,63       16,89
+    disc. prod                         0,00
+  3           justo       17,80       53,40
+  1   fringilla vel        9,99        9,99
+  2     aliquet nec        7,55       15,10
+  6  vulputate eget        0,45        2,70
+________________________________________________
+________________________________________________
+TAXABLE TOT.                         807,76
+DISC.                                 55,42
+TOTAL                                752,34
